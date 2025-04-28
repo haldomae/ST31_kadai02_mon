@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ST31_kadai02_mon</string>
+    <string name="hello">Hello Android</string>
 </resources>
