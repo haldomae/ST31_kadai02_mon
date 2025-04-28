@@ -1,6 +1,7 @@
 package com.classnumber_00_domaekazuki.st31_kadai02_mon
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        // TextView型の変数を作った
+        // 画面に配置されている部品をID指定して取得する
+        var textView: TextView = findViewById(R.id.message)
+        // テキストを変更
+        // String.xmlからテキストデータを取得
+        textView.text = getString(R.string.pokemon)
     }
 }
