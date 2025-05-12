@@ -2,6 +2,7 @@ package com.classnumber_00_domaekazuki.st31_kadai02_mon
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -32,5 +33,10 @@ class MainActivity : AppCompatActivity() {
             // ボタン押した時の処理
             textView.text = getString(R.string.pokemon_name)
         }
+
+        // 画像の要素を取得
+        var pokemonImage: ImageView = findViewById(R.id.image)
+        // 画像を切り替える
+        pokemonImage.setImageResource(R.drawable.img2)
     }
 }
