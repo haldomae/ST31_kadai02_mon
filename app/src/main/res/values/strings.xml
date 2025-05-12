@@ -4,4 +4,5 @@
     <string name="image">画像</string>
     <string name="button">OK</string>
     <string name="pokemon">Pokemon</string>
+    <string name="pokemon_name">ホゲータ</string>
 </resources>

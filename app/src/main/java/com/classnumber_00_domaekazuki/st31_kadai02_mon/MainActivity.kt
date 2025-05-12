@@ -1,6 +1,7 @@
 package com.classnumber_00_domaekazuki.st31_kadai02_mon
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -23,5 +24,13 @@ class MainActivity : AppCompatActivity() {
         // テキストを変更
         // String.xmlからテキストデータを取得
         textView.text = getString(R.string.pokemon)
+
+        // 画面からボタンの要素を取得
+        var okButton: Button = findViewById(R.id.button)
+        // ボタンにクリックリスナーを付ける
+        okButton.setOnClickListener {
+            // ボタン押した時の処理
+            textView.text = getString(R.string.pokemon_name)
+        }
     }
 }
